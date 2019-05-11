@@ -24,6 +24,5 @@ export default function Tags() {
     const filteredTags = tags.filter(tag => tag.name !== value);
     setTags(filteredTags);
   };
-
   return <TagsViewer tags={tags} onAdd={onAdd} onDelete={onDelete} />;
 }
