@@ -4,6 +4,7 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
+  "homepage": "https://dibericky.github.io/react-tags_list.io",
   "dependencies": {
     "antd": "3.17.0",
     "enzyme": "3.9.0",
@@ -14,13 +15,16 @@
     "styled-components": "4.2.0"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "typescript": "3.3.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
