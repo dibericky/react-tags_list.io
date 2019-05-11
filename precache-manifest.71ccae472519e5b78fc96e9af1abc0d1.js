@@ -4,23 +4,23 @@ self.__precacheManifest = [
     "url": "/react-tags_list.io/static/js/runtime~main.77b3f94c.js"
   },
   {
-    "revision": "31889e70bb19ae5bc439",
-    "url": "/react-tags_list.io/static/js/main.0d102bb7.chunk.js"
+    "revision": "b5c969a23d97ecf9760b",
+    "url": "/react-tags_list.io/static/js/main.83c5fcf9.chunk.js"
   },
   {
-    "revision": "104189b3d6a01e411215",
-    "url": "/react-tags_list.io/static/js/2.8a82152c.chunk.js"
+    "revision": "c505fadc1816a9128c6e",
+    "url": "/react-tags_list.io/static/js/2.9589665d.chunk.js"
   },
   {
-    "revision": "31889e70bb19ae5bc439",
+    "revision": "b5c969a23d97ecf9760b",
     "url": "/react-tags_list.io/static/css/main.8347ef85.chunk.css"
   },
   {
-    "revision": "104189b3d6a01e411215",
+    "revision": "c505fadc1816a9128c6e",
     "url": "/react-tags_list.io/static/css/2.0871b1c6.chunk.css"
   },
   {
-    "revision": "b54eb875463c678c492315f26ec4ac0b",
+    "revision": "2037ca3cbfdad25aeec04ec62fbf172d",
     "url": "/react-tags_list.io/index.html"
   }
 ];
