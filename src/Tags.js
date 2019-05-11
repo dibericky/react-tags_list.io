@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import TagsViewer from "./TagsViewer";
 
-export default function Tags() {
+export default function TagsDemo() {
   const [tags, setTags] = useState([
     { name: "foo", closable: true, color: "magenta" },
     { name: "bar", color: "cyan" },
@@ -24,5 +24,5 @@ export default function Tags() {
     const filteredTags = tags.filter(tag => tag.name !== value);
     setTags(filteredTags);
   };
-  return <TagsViewer tags={tags} onAdd={onAdd} onDelete={onDelete} />;
+  return <TagsViewer tags={tags} onAdd={onAdd} onDelete={onDelete} errorMessage={"Tag already exists"} />;
 }

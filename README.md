@@ -11,10 +11,21 @@ const tags = [
   ]
 const onAdd = (value) => {
     // your code
-    return true // true if added successful
+    return true // true if added successful.  false if you wanna show an error.
 }
 const onDelete = (value) => {
     // your code
 }
-<TagsViewer tags={tags} onAdd={onAdd} onDelete={onDelete} />
+<TagsViewer tags={tags} onAdd={onAdd} onDelete={onDelete} errorMessage={'Tag already exists'} />
+```
+
+## Renders a ReadOnly list of Tag
+
+```js
+const tags = [
+    { name: "foo",  color: "magenta" }, 
+    { name: "bar", color: "cyan" },
+    { name: "lorem", color: "blue" }
+  ]
+<TagsViewer tags={tags} readOnly />
 ```

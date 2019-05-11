@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import styled from "styled-components";
 
-import Tags from "./Tags";
+import TagsDemo from "./Tags";
+import TagsViewer from "./TagsViewer"
 
 import "antd/dist/antd.css";
 import "./styles.css";
@@ -38,14 +39,21 @@ class App extends Component {
 
     return (
       <div className="App">
+        <Title>List of Tag with Add and Delete feature</Title>
         <Wrapper>
-          <Tags />
+          <TagsDemo />
         </Wrapper>
+        <br />
+        <Title>Read only List of Tag</Title>
+        <TagsViewer tags={[{name: 'foo', color: 'magenta'}, {name: 'bar', color: 'blue'}]} readOnly />
       </div>
     );
   }
 }
 
+const Title = styled.h3`
+  text-align: left;
+`
 const Wrapper = styled.div`
   width: 300px;
   border: 1px solid blue;

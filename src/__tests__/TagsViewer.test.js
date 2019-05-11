@@ -48,4 +48,27 @@ describe("TagsViewer", () => {
       expect(props.onDelete).toHaveBeenCalledWith(expectedClosableTags[index].name)
     })
   })
+
+  describe("if readOnly", () => {
+    it("renders correct numbers of Tag", () => {
+      element = mount(<TagsViewer {...props} readOnly />);
+      const tagsElement = element.find(Tag);
+      expect(tagsElement.length).toEqual(tags.length);
+    });
+
+    it("does not renders an AddTagButton", () => {
+      element = mount(<TagsViewer {...props} readOnly />);
+      const addTagButton = element.find('AddTagButton')
+      expect(addTagButton.length).toEqual(0)
+    })
+
+    it("does not set closable and onClose on Tag", () => {
+      element = mount(<TagsViewer {...props} readOnly />);
+      const tagsElement = element.find(Tag);
+      tagsElement.forEach(tag => {
+        expect(tag.prop('closable')).toEqual(false)
+        expect(tag.prop('onClose')).toEqual(null)
+      })
+    })
+  })
 });
