@@ -11,7 +11,7 @@ const tags = [
   ]
 const onAdd = (value) => {
     // your code
-    return true // true if added successfull
+    return true // true if added successful
 }
 const onDelete = (value) => {
     // your code
